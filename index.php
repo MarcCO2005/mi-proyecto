@@ -57,47 +57,73 @@ if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
     <title>Ahorcado</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e2f;
+            color: #e4e4e7;
             margin: 0;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
         h1 {
-            color: #444;
+            color: #ff6b6b;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 10px 0;
         }
         form {
             margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         label {
-            font-weight: bold;
+            font-size: 1.2rem;
         }
         input[type="text"] {
-            padding: 5px;
-            font-size: 16px;
-            margin-right: 10px;
+            padding: 10px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            background-color: #2d2d44;
+            color: #fff;
         }
         button {
-            background-color: #007bff;
-            color: white;
+            background-color: #ff6b6b;
+            color: #fff;
             border: none;
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 1.2rem;
+            border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #0056b3;
-        }
-        p {
-            font-size: 18px;
+            background-color: #e63946;
         }
         a {
-            color: #007bff;
+            color: #4fc3f7;
             text-decoration: none;
+            font-size: 1.2rem;
         }
         a:hover {
             text-decoration: underline;
+        }
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+            background-color: #252536;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
