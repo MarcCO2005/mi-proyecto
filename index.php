@@ -55,6 +55,51 @@ if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
 <head>
     <meta charset="UTF-8">
     <title>Ahorcado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #444;
+        }
+        form {
+            margin: 20px 0;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            font-size: 18px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Juego del Ahorcado</h1>
